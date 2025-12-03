@@ -1,7 +1,6 @@
 services:
   - type: web
     name: applepay-demo
-    env: nixpacks
     buildCommand: "mvn -ntp -DskipTests package"
     startCommand: "java -jar target/*.jar"
     envVars:
