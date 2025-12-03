@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Apple Pay + Stripe Demo</title>
+  <script crossorigin src="https://applepay.cdn-apple.com/jsapi/1/latest/apple-pay-sdk.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, Arial, sans-serif; padding: 2rem; }
+    main { max-width: 720px; margin: 0 auto; }
+    #apple-pay-button-container { margin-top: 1rem; }
+    #status { margin-top: 1rem; color: #333; }
+    .small { font-size: 0.9rem; color: #666; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Apple Pay + Stripe (Plain JS)</h1>
+    <div id="status" class="small">Loading...</div>
+    <div id="apple-pay-button-container"></div>
+    <script src="apple-pay.js"></script>
+  </main>
+</body>
+</html>
