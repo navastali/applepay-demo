@@ -1,8 +1,10 @@
 services:
   - type: web
     name: applepay-demo
+    plan: free
     buildCommand: "mvn -ntp -DskipTests package"
     startCommand: "java -jar target/*.jar"
+    autoDeploy: true
     envVars:
       - key: PORT
         value: 8080
